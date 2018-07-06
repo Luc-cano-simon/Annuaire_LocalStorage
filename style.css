@@ -1,0 +1,119 @@
+body
+{
+	background: url("https://www.wallpast.com/wp-content/uploads/2017/12/hd-powerpoint-background-hd-powerpoint-background-hd-ppt-background-free-download-best-hd-ppt-background-powerpoint-hd-video.creative-backgrounds-for-powerpoint-download-hd-wallpapers-10448");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+
+h2
+{
+	
+	text-align: center;
+	padding-top: 30px ;
+	color: white;
+}
+
+
+ul{
+	
+	width: 96%;
+	top:0px;
+	height: 32px;
+	text-align: center;
+	display: table;
+	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 18px;
+	line-height: 1.43;
+	margin-top: 80px;
+	padding-top: 40px;
+
+	
+
+}
+li
+{
+	display: inline-block;
+	box-sizing: border-box;
+	color: black;
+	padding-right: 1.3em ;
+
+}
+
+li:hover
+{
+	/*border-bottom: 1px solid grey;*/
+	cursor: pointer;
+	/*text-decoration: white;*/
+
+}
+
+.menu
+{
+	text-decoration:none;
+	color: lightblue;
+}
+
+#afficher
+{
+	display: block;
+	margin: 0 auto;
+	width: 160px; /* largeur obligatoire pour être centré */
+
+}
+
+pre /* Balise de retour à la ligne qui remplace <br> */
+{
+	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-align: center;
+}
+
+#envoyer
+{
+	display: block;
+	margin: 0 auto;
+	width: 150px; 
+
+}
+
+/*.recherche 
+{
+margin: 180px;
+font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+color:black;
+/*font-size: 25px;
+}*/
+
+.search[type=text] 
+{
+	width: 130px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: white;
+	/*background-image: url('searchicon.png');*/
+	background-position: 10px 10px; 
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 40px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+}
+
+.search[type=text]:focus
+{
+	width: 100%;
+}
+
+form
+{
+	padding-bottom: 30px;
+}
+
+.btn
+{
+	float: center;
+	margin left: 150px;
+}
+
