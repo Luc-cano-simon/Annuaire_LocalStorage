@@ -117,3 +117,23 @@ form
 	margin left: 150px;
 }
 
+#formAdd
+{
+	padding-top: 30px;
+	display: block;
+	margin: 0 auto;
+	width: 160px; /* largeur obligatoire pour être centré */
+	
+
+}
+
+#afficherF
+{
+	display: block;
+	margin: 0 auto;
+	width: 160px; /* largeur obligatoire pour être centré */
+
+}
+
+
+

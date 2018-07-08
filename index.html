@@ -12,13 +12,28 @@
 <body>
 	<h2> Annuaire </h2>
 
-	<ul>
+
+<button class = "btn btn-info" id = "afficherF"> Inscription </button>
+<!-- 	<ul>
 		<li><a href="index2.html"> Se referencer </a></li> 
 		<li><a href="" title="Part pas !!!!" id ="fake">Me Désinscrire</a>
 		</li>
-	</ul>
+	</ul> -->
 
-	
+	<form id="formAdd">
+		<label>Nom:</label>
+		<input type="text" name="nom" id="nom">
+		<label>Prenom:</label>
+		<input type="text" name="prenom" id="prenom">
+		<label>Ville:</label>
+		<input  id="ville">
+		<label>Email:</label>
+		<input  id="email">
+		<label>Téléphone:</label>
+		<input  id="telephone">
+		
+		<button id="send" class="btn btn-outline-success my-2 my-sm-0">Ajouter</button>
+	</form>
 	
 	<form>
 		<input type="text" class="search" placeholder="Qui ? ">

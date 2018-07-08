@@ -141,6 +141,22 @@ var annuaire =
 },
 ];
 
+// var tab = [];
+// var personne =
+// {
+// 	Nom: $("#nom").val(), 
+// 	Prenom: $("#prenom").val(),
+// 	Email: $("#email").val(),
+// 	Ville:$("#ville").val(),
+// 	Téléphone: $("#telephone").val()
+// };
+// console.log(personne);
+
+// var personne_json = JSON.stringify(personne);
+// sessionStorage.setItem("objet",personne_json);
+
+
+
 
 
 $(".table").hide()
@@ -149,7 +165,15 @@ for (var i = 0; i<annuaire.length; i++)
 {
 	$(".table").append('<tr><td>'+annuaire[i].Nom+'</td><td>'+annuaire[i].Prenom+'</td><td>'+annuaire[i].Email+'</td><td>'+annuaire[i].Ville+'</td><td>'+annuaire[i].Téléphone+'</td></tr>;')
 }
+//fonction afficher le formulaire
 
+$("#formAdd").hide()
+
+$('#afficherF').click(function()
+
+{
+	$("#formAdd").show();
+})
 
 // fonction afficher tableau
 
@@ -179,7 +203,8 @@ $('.recherche').click(function()
 	{
 		var trouver=$(".search").val().toUpperCase();
 		var comparer=annuaire[i].Nom.toUpperCase();
-		if (trouver==comparer) 
+		var comparer2=annuaire[i].Prenom.toUpperCase();
+		if (trouver==comparer || trouver == comparer2) 
 		{ 	
 			$(".table").append('<tr><td>'+annuaire[i].Nom+'</td><td>'+annuaire[i].Prenom+'</td><td>'+annuaire[i].Email+'</td><td>'+annuaire[i].Ville+'</td><td>'+annuaire[i].Téléphone+'</td></tr>;')
 			return false;
@@ -187,19 +212,31 @@ $('.recherche').click(function()
 		}
 	}		
 });
+
 		
-// Stockage des données avec local storage
 
-var tab = []
-var personne =
+
+
+function ajouterElement(table)
+{
+	$(".table").empty();
+	annuaire.push({Nom : $("#nom").val(),Prenom : $("#prenom").val(), Ville : $("#ville").val(), Email : $("#email").val(), Téléphone: $("telephone").val()});
+	for (var i = 0; i < annuaire.length; i++)
 	{
-		Nom: $("#nom").val(), 
-		Prenom: $("#prenom").val(),
-		Email: $("#email").val(),
-		Ville:$("#ville").val(),
-		Téléphone: $("#telephone").val()
+		$(".table").show();
+		
 	}
-console.log(personne);
-			
 
+	console.log(annuaire);
+};
+		 
 
+$("#send").click(function()
+{
+	ajouterElement();
+	$(".table").show();
+	alert('Contact ajouté Merci et à bientôt');
+	console.log(annuaire);
+});
+	
+	
