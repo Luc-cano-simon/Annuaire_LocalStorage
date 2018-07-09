@@ -114,6 +114,7 @@ form
 .btn
 {
 	float: center;
+	display: inline;
 	margin left: 150px;
 }
 
@@ -135,5 +136,10 @@ form
 
 }
 
+#supprimerF
+{
+	display: block;
+	margin: 0 auto;
+	width: 160px; /* largeur obligatoire pour être centré */
 
-
+}
